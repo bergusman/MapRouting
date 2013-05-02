@@ -78,16 +78,16 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="ycz-q2-Uok">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="379"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="388"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="KFy-GM-2VB" id="GyE-aP-j8k"/>
                                 </connections>
                             </mapView>
                             <view contentMode="scaleToFill" id="tzz-dz-nkG">
-                                <rect key="frame" x="0.0" y="379" width="320" height="76"/>
+                                <rect key="frame" x="0.0" y="387" width="320" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.80000000000000004" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.70588235294117641" green="0.76470588235294112" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -141,6 +141,18 @@
             <point key="canvasLocation" x="838" y="890"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="VBMapAppsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VBMapAppsViewController.h"/>
+        </class>
+        <class className="VBRoutingAppsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VBRoutingAppsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="buttonsContainerView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
