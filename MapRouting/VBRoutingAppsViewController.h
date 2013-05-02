@@ -1,5 +1,5 @@
 //
-//  VBSecondViewController.h
+//  VBRoutingAppsViewController.h
 //  MapRouting
 //
 //  Created by Vitaliy Berg on 5/3/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VBSecondViewController : UIViewController
+@interface VBRoutingAppsViewController : UIViewController
 
 @end

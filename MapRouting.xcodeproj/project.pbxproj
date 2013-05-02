@@ -17,12 +17,20 @@
 		AD1B3C5317330C4C00A3DC28 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD1B3C5217330C4C00A3DC28 /* Default@2x.png */; };
 		AD1B3C5517330C4C00A3DC28 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD1B3C5417330C4C00A3DC28 /* Default-568h@2x.png */; };
 		AD1B3C5817330C4C00A3DC28 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1B3C5617330C4C00A3DC28 /* MainStoryboard.storyboard */; };
-		AD1B3C5B17330C4C00A3DC28 /* VBFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1B3C5A17330C4C00A3DC28 /* VBFirstViewController.m */; };
 		AD1B3C5D17330C4C00A3DC28 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = AD1B3C5C17330C4C00A3DC28 /* first.png */; };
 		AD1B3C5F17330C4C00A3DC28 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD1B3C5E17330C4C00A3DC28 /* first@2x.png */; };
-		AD1B3C6217330C4C00A3DC28 /* VBSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1B3C6117330C4C00A3DC28 /* VBSecondViewController.m */; };
 		AD1B3C6417330C4C00A3DC28 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = AD1B3C6317330C4C00A3DC28 /* second.png */; };
 		AD1B3C6617330C4C00A3DC28 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD1B3C6517330C4C00A3DC28 /* second@2x.png */; };
+		AD1B3C6F17330CB400A3DC28 /* VBMapAppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1B3C6E17330CB400A3DC28 /* VBMapAppsViewController.m */; };
+		AD1B3C7217330CE100A3DC28 /* VBRoutingAppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1B3C7117330CE100A3DC28 /* VBRoutingAppsViewController.m */; };
+		AD1B3C7417330E4C00A3DC28 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1B3C7317330E4B00A3DC28 /* MapKit.framework */; };
+		AD1B3C761733108500A3DC28 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1B3C751733108500A3DC28 /* QuartzCore.framework */; };
+		AD1B3C781733132F00A3DC28 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1B3C771733132F00A3DC28 /* CoreLocation.framework */; };
+		AD1B3C7C1733187D00A3DC28 /* GoogleMaps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD1B3C791733187D00A3DC28 /* GoogleMaps@2x.png */; };
+		AD1B3C7D1733187D00A3DC28 /* YandexMaps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD1B3C7A1733187D00A3DC28 /* YandexMaps@2x.png */; };
+		AD1B3C7E1733187D00A3DC28 /* YandexNavi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD1B3C7B1733187D00A3DC28 /* YandexNavi@2x.png */; };
+		AD1B3C81173321F100A3DC28 /* AppleMaps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD1B3C80173321F100A3DC28 /* AppleMaps@2x.png */; };
+		AD1B3C831733278A00A3DC28 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1B3C821733278A00A3DC28 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,14 +48,22 @@
 		AD1B3C5217330C4C00A3DC28 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		AD1B3C5417330C4C00A3DC28 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		AD1B3C5717330C4C00A3DC28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		AD1B3C5917330C4C00A3DC28 /* VBFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBFirstViewController.h; sourceTree = "<group>"; };
-		AD1B3C5A17330C4C00A3DC28 /* VBFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBFirstViewController.m; sourceTree = "<group>"; };
 		AD1B3C5C17330C4C00A3DC28 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		AD1B3C5E17330C4C00A3DC28 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		AD1B3C6017330C4C00A3DC28 /* VBSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBSecondViewController.h; sourceTree = "<group>"; };
-		AD1B3C6117330C4C00A3DC28 /* VBSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBSecondViewController.m; sourceTree = "<group>"; };
 		AD1B3C6317330C4C00A3DC28 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		AD1B3C6517330C4C00A3DC28 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		AD1B3C6D17330CB400A3DC28 /* VBMapAppsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBMapAppsViewController.h; sourceTree = "<group>"; };
+		AD1B3C6E17330CB400A3DC28 /* VBMapAppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBMapAppsViewController.m; sourceTree = "<group>"; };
+		AD1B3C7017330CE100A3DC28 /* VBRoutingAppsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBRoutingAppsViewController.h; sourceTree = "<group>"; };
+		AD1B3C7117330CE100A3DC28 /* VBRoutingAppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBRoutingAppsViewController.m; sourceTree = "<group>"; };
+		AD1B3C7317330E4B00A3DC28 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AD1B3C751733108500A3DC28 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AD1B3C771733132F00A3DC28 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AD1B3C791733187D00A3DC28 /* GoogleMaps@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoogleMaps@2x.png"; sourceTree = "<group>"; };
+		AD1B3C7A1733187D00A3DC28 /* YandexMaps@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "YandexMaps@2x.png"; sourceTree = "<group>"; };
+		AD1B3C7B1733187D00A3DC28 /* YandexNavi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "YandexNavi@2x.png"; sourceTree = "<group>"; };
+		AD1B3C80173321F100A3DC28 /* AppleMaps@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppleMaps@2x.png"; sourceTree = "<group>"; };
+		AD1B3C821733278A00A3DC28 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +71,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD1B3C831733278A00A3DC28 /* StoreKit.framework in Frameworks */,
+				AD1B3C781733132F00A3DC28 /* CoreLocation.framework in Frameworks */,
+				AD1B3C761733108500A3DC28 /* QuartzCore.framework in Frameworks */,
+				AD1B3C7417330E4C00A3DC28 /* MapKit.framework in Frameworks */,
 				AD1B3C3F17330C4C00A3DC28 /* UIKit.framework in Frameworks */,
 				AD1B3C4117330C4C00A3DC28 /* Foundation.framework in Frameworks */,
 				AD1B3C4317330C4C00A3DC28 /* CoreGraphics.framework in Frameworks */,
@@ -84,6 +104,10 @@
 		AD1B3C3D17330C4C00A3DC28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AD1B3C821733278A00A3DC28 /* StoreKit.framework */,
+				AD1B3C771733132F00A3DC28 /* CoreLocation.framework */,
+				AD1B3C751733108500A3DC28 /* QuartzCore.framework */,
+				AD1B3C7317330E4B00A3DC28 /* MapKit.framework */,
 				AD1B3C3E17330C4C00A3DC28 /* UIKit.framework */,
 				AD1B3C4017330C4C00A3DC28 /* Foundation.framework */,
 				AD1B3C4217330C4C00A3DC28 /* CoreGraphics.framework */,
@@ -94,17 +118,10 @@
 		AD1B3C4417330C4C00A3DC28 /* MapRouting */ = {
 			isa = PBXGroup;
 			children = (
+				AD1B3C6C17330C6C00A3DC28 /* Controllers */,
 				AD1B3C4D17330C4C00A3DC28 /* VBAppDelegate.h */,
 				AD1B3C4E17330C4C00A3DC28 /* VBAppDelegate.m */,
 				AD1B3C5617330C4C00A3DC28 /* MainStoryboard.storyboard */,
-				AD1B3C5917330C4C00A3DC28 /* VBFirstViewController.h */,
-				AD1B3C5A17330C4C00A3DC28 /* VBFirstViewController.m */,
-				AD1B3C5C17330C4C00A3DC28 /* first.png */,
-				AD1B3C5E17330C4C00A3DC28 /* first@2x.png */,
-				AD1B3C6017330C4C00A3DC28 /* VBSecondViewController.h */,
-				AD1B3C6117330C4C00A3DC28 /* VBSecondViewController.m */,
-				AD1B3C6317330C4C00A3DC28 /* second.png */,
-				AD1B3C6517330C4C00A3DC28 /* second@2x.png */,
 				AD1B3C4517330C4C00A3DC28 /* Supporting Files */,
 			);
 			path = MapRouting;
@@ -113,6 +130,7 @@
 		AD1B3C4517330C4C00A3DC28 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AD1B3C7F1733188200A3DC28 /* Images */,
 				AD1B3C4617330C4C00A3DC28 /* MapRouting-Info.plist */,
 				AD1B3C4717330C4C00A3DC28 /* InfoPlist.strings */,
 				AD1B3C4A17330C4C00A3DC28 /* main.m */,
@@ -122,6 +140,32 @@
 				AD1B3C5417330C4C00A3DC28 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD1B3C6C17330C6C00A3DC28 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD1B3C6D17330CB400A3DC28 /* VBMapAppsViewController.h */,
+				AD1B3C6E17330CB400A3DC28 /* VBMapAppsViewController.m */,
+				AD1B3C7017330CE100A3DC28 /* VBRoutingAppsViewController.h */,
+				AD1B3C7117330CE100A3DC28 /* VBRoutingAppsViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AD1B3C7F1733188200A3DC28 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AD1B3C5C17330C4C00A3DC28 /* first.png */,
+				AD1B3C5E17330C4C00A3DC28 /* first@2x.png */,
+				AD1B3C6317330C4C00A3DC28 /* second.png */,
+				AD1B3C6517330C4C00A3DC28 /* second@2x.png */,
+				AD1B3C791733187D00A3DC28 /* GoogleMaps@2x.png */,
+				AD1B3C7A1733187D00A3DC28 /* YandexMaps@2x.png */,
+				AD1B3C7B1733187D00A3DC28 /* YandexNavi@2x.png */,
+				AD1B3C80173321F100A3DC28 /* AppleMaps@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +229,10 @@
 				AD1B3C5F17330C4C00A3DC28 /* first@2x.png in Resources */,
 				AD1B3C6417330C4C00A3DC28 /* second.png in Resources */,
 				AD1B3C6617330C4C00A3DC28 /* second@2x.png in Resources */,
+				AD1B3C7C1733187D00A3DC28 /* GoogleMaps@2x.png in Resources */,
+				AD1B3C7D1733187D00A3DC28 /* YandexMaps@2x.png in Resources */,
+				AD1B3C7E1733187D00A3DC28 /* YandexNavi@2x.png in Resources */,
+				AD1B3C81173321F100A3DC28 /* AppleMaps@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +245,8 @@
 			files = (
 				AD1B3C4B17330C4C00A3DC28 /* main.m in Sources */,
 				AD1B3C4F17330C4C00A3DC28 /* VBAppDelegate.m in Sources */,
-				AD1B3C5B17330C4C00A3DC28 /* VBFirstViewController.m in Sources */,
-				AD1B3C6217330C4C00A3DC28 /* VBSecondViewController.m in Sources */,
+				AD1B3C6F17330CB400A3DC28 /* VBMapAppsViewController.m in Sources */,
+				AD1B3C7217330CE100A3DC28 /* VBRoutingAppsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

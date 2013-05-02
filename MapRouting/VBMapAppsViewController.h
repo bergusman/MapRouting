@@ -1,5 +1,5 @@
 //
-//  VBFirstViewController.h
+//  VBMapAppsViewController.h
 //  MapRouting
 //
 //  Created by Vitaliy Berg on 5/3/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VBFirstViewController : UIViewController
+@interface VBMapAppsViewController : UITableViewController
 
 @end
