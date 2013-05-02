@@ -21,12 +21,10 @@
     [super awakeFromNib];
     NSMutableArray *mapApps = [NSMutableArray array];
     
-    UIApplication *app = [UIApplication sharedApplication];
     
     [mapApps addObject:@{
         @"icon" : @"AppleMaps",
         @"name": @"Apple Maps",
-        @"installed": @YES,
         @"open_url": @"http://maps.apple.com/maps?q",
         @"app_id": @(0)
      }];
@@ -34,7 +32,6 @@
     [mapApps addObject:@{
         @"icon" : @"GoogleMaps",
         @"name": @"Google Maps",
-        @"installed": @([app canOpenURL:[NSURL URLWithString:@"comgooglemaps://"]]),
         @"open_url": @"comgooglemaps://",
         @"app_id": @(585027354)
      }];
@@ -42,7 +39,6 @@
     [mapApps addObject:@{
         @"icon" : @"YandexMaps",
         @"name": @"Yandex Maps",
-        @"installed": @([app canOpenURL:[NSURL URLWithString:@"yandexmaps://"]]),
         @"open_url": @"yandexmaps://",
         @"app_id": @(313877526)
      }];
@@ -50,7 +46,6 @@
     [mapApps addObject:@{
         @"icon" : @"YandexNavi",
         @"name": @"Yandex Navigator",
-        @"installed": @([app canOpenURL:[NSURL URLWithString:@"yandexnavi://"]]),
         @"open_url": @"yandexnavi://",
         @"app_id": @(474500851)
      }];
@@ -64,6 +59,11 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
 }
 
 #pragma mark - UITableViewDataSource
@@ -80,7 +80,7 @@
     
     cell.textLabel.text = mapApp[@"name"];
     
-    if ([mapApp[@"installed"] boolValue]) {
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:mapApp[@"open_url"]]]) {
         cell.detailTextLabel.text = @"Installed";
         cell.detailTextLabel.textColor = [UIColor colorWithRed:0 green:0.7 blue:0 alpha:0.5];
     } else {
@@ -98,7 +98,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSDictionary *mapApp = self.mapApps[indexPath.row];
-    if ([mapApp[@"installed"] boolValue]) {
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:mapApp[@"open_url"]]]) {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:mapApp[@"open_url"]]];
     } else {
         [self presentStoreProductWithAppID:mapApp[@"app_id"]];
