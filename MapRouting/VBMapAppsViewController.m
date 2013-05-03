@@ -126,11 +126,16 @@
 }
 
 - (void)presentStoreProductWithAppID:(NSNumber *)appID {
+    NSString *urlString = [NSString stringWithFormat:@"https://itunes.apple.com/us/app/id%@", appID];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
+
+    /*
     SKStoreProductViewController *storeViewController = [[SKStoreProductViewController alloc] init];
     storeViewController.delegate = self;
     [storeViewController loadProductWithParameters:@{SKStoreProductParameterITunesItemIdentifier: appID} completionBlock:nil];
     [self presentViewController:storeViewController animated:YES completion:^{
     }];
+     */
 }
 
 @end
