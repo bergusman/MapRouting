@@ -24,33 +24,6 @@
 
 @implementation VBRoutingAppsViewController
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    
-    NSMutableArray *routingApps = [NSMutableArray array];
-    
-    [routingApps addObject:@{
-        @"icon" : @"AppleMaps",
-        @"url" : @"http://maps.apple.com/maps?saddr=%f,%f&daddr=%f,%f"
-     }];
-    
-    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"comgooglemaps://"]]) {
-        [routingApps addObject:@{
-            @"icon" : @"GoogleMaps",
-            @"url" : @"comgooglemaps://?saddr=%f,%f&daddr=%f,%f"
-         }];
-    }
-    
-    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"yandexnavi://"]]) {
-        [routingApps addObject:@{
-            @"icon" : @"YandexNavi",
-            @"url" : @"yandexnavi://build_route_on_map?lat_from=%f&lon_from=%f&lat_to=%f&lon_to=%f"
-         }];
-    }
-    
-    self.routingApps = routingApps;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -70,15 +43,52 @@
     self.pointTo.coordinate = CLLocationCoordinate2DMake(55.744845, 37.602768);
     self.pointTo.title = @"To";
     [self.mapView addAnnotation:self.pointTo];
-    
-    [self generateButtons];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.routingApps = [self generateRoutingApps];
+    [self generateButtons];
+}
+
+- (NSArray *)generateRoutingApps {
+    NSMutableArray *routingApps = [NSMutableArray array];
+    
+    [routingApps addObject:@{
+     @"icon" : @"AppleMaps",
+     @"url" : @"http://maps.apple.com/maps?saddr=%f,%f&daddr=%f,%f"
+     }];
+    
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"comgooglemaps://"]]) {
+        [routingApps addObject:@{
+         @"icon" : @"GoogleMaps",
+         @"url" : @"comgooglemaps://?saddr=%f,%f&daddr=%f,%f"
+         }];
+    }
+    
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"yandexnavi://"]]) {
+        [routingApps addObject:@{
+         @"icon" : @"YandexNavi",
+         @"url" : @"yandexnavi://build_route_on_map?lat_from=%f&lon_from=%f&lat_to=%f&lon_to=%f"
+         }];
+    }
+    
+    return routingApps;
+}
+
+- (void)removeButtons {
+    for (UIButton *button in [self.buttonsContainerView.subviews copy]) {
+        [button removeFromSuperview];
+    }
+}
+
 - (void)generateButtons {
+    [self removeButtons];
+    
     CGSize buttonSize = CGSizeMake(64, 64);
     CGFloat step = (320 - buttonSize.width * [self.routingApps count]) / ([self.routingApps count] + 1);
     CGFloat step2 = step + buttonSize.width;
